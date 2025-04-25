@@ -1,55 +1,45 @@
-# 👕 Classificador de Roupas
+# Classificador de Animais 🐶🐱🦁🐬
 
-Este é um projeto simples de classificação de imagens utilizando um modelo treinado com [Teachable Machine](https://teachablemachine.withgoogle.com/) e executado com [TensorFlow.js](https://www.tensorflow.org/js).
+Este projeto é um **classificador de animais** que utiliza **inteligência artificial** para identificar diferentes espécies (como cachorro, gato, leão e golfinho) a partir de imagens.  
+O modelo foi treinado usando o [Teachable Machine](https://teachablemachine.withgoogle.com/) do Google e é executado **diretamente no navegador** com o auxílio da biblioteca **TensorFlow.js**.
 
-A aplicação permite ao usuário **enviar uma imagem de uma roupa** (camisa, calça, casaco ou vestido) e o sistema classifica automaticamente o tipo da peça.
+---
 
-## 🧠 Modelo
+## 🐶 Tecnologias Utilizadas
 
-O modelo foi treinado com imagens reais de roupas e exportado no formato web para uso local (arquivos `.json`, `.bin` e `.metadata.json`).
-
-## 🛠 Tecnologias utilizadas
-
-- HTML5
-- CSS3
-- JavaScript (puro)
-- TensorFlow.js
+- HTML5  
+- CSS3  
+- JavaScript  
+- TensorFlow.js  
 - Teachable Machine
 
-## 📁 Estrutura de Pastas
+---
+
+## 🐱 Estrutura do Projeto
+
+- `index.html` → Página principal da aplicação  
+- `style.css` → Estilos da interface  
+- `script.js` → Lógica da aplicação e carregamento do modelo  
+- `my_model/` → Pasta contendo o modelo treinado (`model.json`, `metadata.json`, arquivos `.bin`)
+
+---
+
+## 🦁 Como Funciona
+
+1. O usuário abre o `index.html` no navegador.  
+2. Faz upload de uma imagem de um animal.  
+3. O modelo identifica a espécie com base no que aprendeu durante o treinamento.  
+4. O resultado é exibido instantaneamente na tela!
+
+---
+
+## 🐬 Como Usar
 
 ```bash
-classificador-roupas/
+# Clone o repositório
+git clone https://github.com/MatheusBarbedo/Classificador-de-animais.git
 
-├── index.html          # Página principal da aplicação
-├── style.css           # Estilos da aplicação
-├── script.js           # Lógica JavaScript
-├── my_model/           # Pasta contendo o modelo treinado
-│   ├── model.json      # Configuração do modelo
-│   ├── metadata.json   # Metadados do modelo
-│   └── weights.bin     # Pesos da rede neural
-```
+# Acesse a pasta
+cd Classificador-de-animais
 
-## ▶️ Como rodar o projeto
-
-> ⚠️ Este projeto **precisa ser executado em um servidor local via liver server**.
-
-### ✅ Requisitos
-
-- Navegador moderno (Chrome, Brave, Firefox...)
-- Editor de código (VS Code recomendado)
-- Extensão **Live Server** no VS Code
-
-### 🧪 Passo a passo com Live Server (VS Code)
-
-1. Clone o repositorio em sua maquina local.
-2. Abra o VS Code e instale a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-3. Abra o repositorio pelo vscode e com liveserver ja instalado, selecione no canto inferior direito **"Go Live"**.
-4. O navegador será aberto automaticamente e o sistema estará pronto para uso.
-5. Envie uma imagem de roupa e clique em **"Classificar"** para ver o resultado.
-
-### 🚫 Não funciona com duplo clique no `index.html`
-
-Por segurança, navegadores modernos bloqueiam o acesso a arquivos locais via `file://`, impedindo que o modelo carregue corretamente.
-
-Use sempre o Live Server para rodar o projeto localmente.
+# Abra o index.html no navegador (clique duas vezes ou arraste para o navegador)
