@@ -37,7 +37,7 @@ O modelo foi treinado usando o [Teachable Machine](https://teachablemachine.with
 
 ```bash
 # Clone o repositório
-git clone https://github.com/MatheusBarbedo/Classificador-de-animais.git
+git clone https://github.com/Leobmt02/Classificador-de-animais.git
 
 # Acesse a pasta
 cd Classificador-de-animais
