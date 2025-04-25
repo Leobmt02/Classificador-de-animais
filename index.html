@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Classificador de Roupas</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+  <h1>Classificador de Roupas 👕👖🧥👗</h1>
+
+  <input type="file" accept="image/*" onchange="handleImageUpload(event)">
+  <br><br>
+  <img id="preview" width="224" />
+  <br><br>
+  <button onclick="classificar()">Classificar</button>
+
+  <div id="label-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
